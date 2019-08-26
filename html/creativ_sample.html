@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>My Sample</title>
+
+    <script>
+        function setBackgroundColor() {
+            var top_red = document.getElementById("top_red").value;
+            var top_green = document.getElementById("top_green").value;
+            var top_blue = document.getElementById("top_blue").value;
+
+            document.getElementById("top_red_value").innerHTML = top_red;
+            document.getElementById("top_green_value").innerHTML = top_green;
+            document.getElementById("top_blue_value").innerHTML = top_blue;
+
+            var bottom_red = document.getElementById("bottom_red").value;
+            var bottom_green = document.getElementById("bottom_green").value;
+            var bottom_blue = document.getElementById("bottom_blue").value;
+
+            document.getElementById("bottom_red_value").innerHTML = bottom_red;
+            document.getElementById("bottom_green_value").innerHTML = bottom_green;
+            document.getElementById("bottom_blue_value").innerHTML = bottom_blue;
+
+            document.body.style.backgroundImage =
+                `-webkit-linear-gradient( rgba(${top_red},${top_green},${top_blue},255) ,rgba(${bottom_red},${bottom_green},${bottom_blue},255) )`;
+        }
+    </script>
+
+    <style>
+        .container {
+            padding-top: 10%;
+            padding-left: 10%;
+        }
+    </style>
+</head>
+
+<body onload="setBackgroundColor()">
+    <div class="container">
+        <div>
+            <label for="">top red</label>
+            <input type="range" min="0" max="255" name="top_red" id="top_red" onchange="setBackgroundColor()">
+            <p id=top_red_value></p>
+        </div>
+        <div>
+            <label for="">top green</label>
+            <input type="range" min="0" max="255" name="top_green" id="top_green" onchange="setBackgroundColor()">
+            <p id=top_green_value></p>
+        </div>
+        <div>
+            <label for="">top blue</label>
+            <input type="range" min="0" max="255" name="top_blue" id="top_blue" onchange="setBackgroundColor()">
+            <p id=top_blue_value></p>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="">bottom red</label>
+            <input type="range" min="0" max="255" name="bottom_red" id="bottom_red" onchange="setBackgroundColor()">
+            <p id=bottom_red_value></p>
+        </div>
+        <div>
+            <label for="">bottom green</label>
+            <input type="range" min="0" max="255" name="bottom_green" id="bottom_green" onchange="setBackgroundColor()">
+            <p id=bottom_green_value></p>
+        </div>
+        <div>
+            <label for="">bottom blue</label>
+            <input type="range" min="0" max="255" name="bottom_blue" id="bottom_blue" onchange="setBackgroundColor()">
+            <p id=bottom_blue_value></p>
+        </div>
+    </div>
+</body>
+
+</html>

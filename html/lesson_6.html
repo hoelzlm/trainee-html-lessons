@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>lesson 6</title>
+
+    <script>
+        function clickMe() {
+            var name = document.getElementById("nameInput").value;
+            alert("Hallo " + name);
+        }
+
+        function setBackgroundColor() {
+            var color = document.getElementById("colorInput").value;
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <label for="">Name:</label>
+        <input type="text" id="nameInput">
+        <button onclick="clickMe()">click me</button>
+    </div>
+    <br>
+    <div>
+        <label for="">Color:</label>
+        <input type="text" id="colorInput">
+        <button onclick="setBackgroundColor()">change color</button>
+    </div>
+
+    <a href="https://htmlcolorcodes.com/">reference</a>
+</body>
+
+</html>
