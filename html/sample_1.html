@@ -8,6 +8,10 @@
                 var color = document.getElementById("colorInput").value;
                 document.getElementById("container").style.backgroundColor = color;
             }
+
+            function button1() {
+                document.getElementById("container").style.backgroundColor = "white";
+            }
         </script>
 
         <style>
@@ -27,6 +31,7 @@
             <label for="">Enter Color String</label>
             <input type="text" id="colorInput">
             <button onclick="setColor()"> apply Color </button>
+            <button onclick="button1()"> Restet </button>
         </div>
     </body>
 
