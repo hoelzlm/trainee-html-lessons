@@ -1,5 +1,5 @@
 # Übungen
-#### Erstellt von Markus Hölzle 2019
+#### Erstellt von Markus Hölzle 2020
 
 In dem Ordner [html](https://muwo-gitlab.multivac.int/azubis-it/schnuppi-html-uebungen/tree/master/html) sind HTML files die erklären was HTML ist und wie es geschrieben wird. Die einzelen Files enthalten auch links zur weiteren Doku. Anbei sind auch Beispiele.
 
